@@ -17,7 +17,7 @@ app.use(cors());
 app.use(express.json());
 app.use(routes);
 
-app.listen(3333, () => {
+app.listen(process.env.APP_PORT, () => {
   // eslint-disable-next-line no-console
   console.log(
     'Server started on port 3333! Use insomnia or front-end to acess data',
